@@ -34,7 +34,6 @@ variable "desired_capacity" {
   type = number
   description = "Enter the desired capacity of an cluster"
 }
-
 variable "min_size" {
   type = number
   description = "Enter min size of nodes"  
@@ -45,4 +44,3 @@ variable "max_size" {
   description = "Enter min size of nodes"  
   }
 
-}
