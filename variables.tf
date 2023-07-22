@@ -20,12 +20,29 @@ variable "cluster_name" {
   description = "ECS cluster name"
 }
 
-variable "system_name" {
+variable "current_workspace" {
   type        = string
-  description = "System name that the infrastructure is created for"
+  description = "Workspace name that the infrastructure is created for"
 }
 
 variable "user_data" {
   type        = string
   description = "User data to be applied to launch template"
+}
+
+variable "desired_capacity" {
+  type: number
+  description = "Enter the desired capacity of an cluster"
+}
+
+variable "min_size" {
+  type: number
+  description = "Enter min size of nodes"  
+  }
+
+variable "max_size" {
+  type: number
+  description = "Enter min size of nodes"  
+  }
+
 }
