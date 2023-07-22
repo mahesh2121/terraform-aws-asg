@@ -31,18 +31,16 @@ variable "user_data" {
 }
 
 variable "desired_capacity" {
-  type: number
+  type = number
   description = "Enter the desired capacity of an cluster"
 }
-
 variable "min_size" {
-  type: number
+  type = number
   description = "Enter min size of nodes"  
   }
 
 variable "max_size" {
-  type: number
+  type = number
   description = "Enter min size of nodes"  
   }
 
-}
